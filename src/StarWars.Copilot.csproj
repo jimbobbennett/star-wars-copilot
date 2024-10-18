@@ -9,7 +9,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Pieces.OS.Client" Version="0.0.9-beta" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+    <PackageReference Include="Pieces.Extensions.AI" Version="0.0.11-beta" />
+    <PackageReference Include="Pieces.OS.Client" Version="0.0.11-beta" />
+    <PackageReference Include="Spectre.Console" Version="0.49.1" />
+    <PackageReference Include="Spectre.Console.Cli" Version="0.49.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="starwars.flf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  
 
 </Project>
