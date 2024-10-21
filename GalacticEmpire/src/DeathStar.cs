@@ -36,7 +36,7 @@ public class DeathStar
                 // Do nothing
                 break;
             case DeathStarSurfaceParts.ThermalExhaustPort:
-                // Like bullseying womp rats in your T-16 back home
+                // Like bullseye-ing womp rats in your T-16 back home
                 Status = DeathStarStatus.Destroyed;
                 break;
         }
