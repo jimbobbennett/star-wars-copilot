@@ -36,4 +36,4 @@ Yoda can sense the living force, and can answer questions on the activities you 
 
 ## How this works
 
-The `Copilot` class provides a base wrapper around a `PiecesCopilotChat`, seeding each conversation with a system prompt set in the derived `R2D2Copilot` and `YodaCopilot` classes. Each conversation also has options set when you run each chat. R2 has options to attach the [GalacticEmpire](./GalacticEmpire/) project, Yoda has options to use Pieces Live Context.
+The `Copilot` class provides a base wrapper around a `PiecesCopilotChat`, seeding each conversation with a system prompt set in the derived `R2D2Copilot` and `YodaCopilot` classes. Each conversation also has options set when you run each chat. R2 has options to attach the [GalacticEmpire](./GalacticEmpire/) project, Yoda has options to use Pieces Long-Term Memory.
