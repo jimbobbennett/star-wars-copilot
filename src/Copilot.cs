@@ -9,7 +9,7 @@ namespace StarWars.Copilot;
 /// This implements <see cref="IChatClient"/> from Microsoft.Extensions.AI, and wraps a
 /// <see cref="PiecesChatClient"/>  that also implements this same interface.
 /// 
-/// When this is constructed, the derived class can set any message guidance that is added to the last user message,
+/// When this is constructed, the derived class can set the system prompt,
 /// and set any default additional properties. These are used to manage the PiecesChatClient.
 /// The keys and values for the supported additional properties are listed in the Pieces.OS.Client GitHub repo
 /// https://github.com/pieces-app/pieces-os-client-sdk-for-csharp/blob/main/src/Extensions/README.md
