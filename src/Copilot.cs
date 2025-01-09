@@ -118,5 +118,5 @@ public abstract class Copilot(IChatClient piecesChatClient, string systemPrompt)
     public void Dispose() => piecesChatClient.Dispose();
 
     /// <inheritdoc />
-    public TService? GetService<TService>(object? key = null) where TService : class => piecesChatClient.GetService<TService>();
+    public object? GetService(Type serviceType, object? serviceKey = null) => serviceType == typeof(IChatClient) ? this : (object?)null;
 }

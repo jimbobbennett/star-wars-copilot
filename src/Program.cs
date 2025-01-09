@@ -13,7 +13,7 @@ var piecesClient = new PiecesClient();
 // We have a cloud model and local model. The cloud model is used by default, but you can swap to a local one for
 // a fully offline experience.
 // To see a list of models, use the piecesClient.GetModelsAsync method
-var cloudModel = await piecesClient.GetModelByNameAsync("Claude 3.5 sonnet").ConfigureAwait(false);
+var cloudModel = await piecesClient.GetModelByNameAsync("GPT-4o chat").ConfigureAwait(false);
 var localModel = await piecesClient.GetModelByNameAsync("Llama-3 8B").ConfigureAwait(false);
 await piecesClient.DownloadModelAsync(localModel).ConfigureAwait(false);
 
