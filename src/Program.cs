@@ -82,7 +82,7 @@ await AskQuestionAndStreamAnswer(client, chatMessages);
 var question = AnsiConsole.Prompt(new TextPrompt<string>(":"));
 
 // Loop till the user types goodbye
-while (!question.Equals("goodbye", StringComparison.OrdinalIgnoreCase))
+while (!question.Equals("goodbye", StringComparison.OrdinalIgnoreCase) && !question.Equals("bye", StringComparison.OrdinalIgnoreCase))
 {
     // Add the question as a user message to the chat messages
     chatMessages.Add(new(ChatRole.User, question));
